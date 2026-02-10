@@ -2,20 +2,23 @@ const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
 const message = document.getElementById("message");
 const photo = document.getElementById("photo");
+const song = document.getElementById("song");
 
 noBtn.addEventListener("click", () => {
-  const x = Math.random() * (window.innerWidth - 100);
-  const y = Math.random() * (window.innerHeight - 100);
+  const x = Math.random() * (window.innerWidth - 80);
+  const y = Math.random() * (window.innerHeight - 80);
 
   noBtn.style.left = x + "px";
   noBtn.style.top = y + "px";
 });
 
 yesBtn.addEventListener("click", () => {
-  message.textContent = "💘 SABÍA QUE DIRÍAS QUE SÍ 💘";
+  message.textContent = "💘 Sabía que dirías que sí. Te amo 💘";
   photo.style.display = "block";
 
-  for (let i = 0; i < 30; i++) {
+  song.play();
+
+  for (let i = 0; i < 40; i++) {
     createHeart();
   }
 });
