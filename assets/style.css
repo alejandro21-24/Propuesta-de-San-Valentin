@@ -85,3 +85,8 @@ button {
     opacity: 0;
   }
 }
+
+/* Ocultar video */
+video {
+  display: none;
+}
